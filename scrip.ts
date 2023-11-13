@@ -4,8 +4,6 @@ let operate: string;
 
 function insert(event: Event): void {
     const x: string = (event.target as HTMLButtonElement).value;
-    // const screem: string = document.getElementById("resultado")?.innerText || "";
-
     if (parseFloat(x) >= 0 && !operate) {
         operation1 = operation1 + x;
         document.getElementById("resultado")!.innerText = operation1;
